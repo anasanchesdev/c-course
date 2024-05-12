@@ -8,7 +8,7 @@ int main(){
     float v = 5;
     printf("X = %d\nY = %d\nW = %d\nV = %d", x, y, w, v);
 
-    // divisão
+    // divisão (tomar cuidado!!)
     // float z = x / (float) y;
     // printf("%f", z);
 
