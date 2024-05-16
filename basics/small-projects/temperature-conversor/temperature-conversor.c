@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <ctype.h>
 
 int main(){
 
@@ -16,11 +16,11 @@ int main(){
 
     switch(unit) {
         case 'C':
-            converted_temp = 1.8 * initial_temp + 32;
+            converted_temp = 1.8 * initial_temp + 32; // c to f
             printf("%.2fC = %.2fF", initial_temp, converted_temp);
             break;
         case 'F':
-            converted_temp = (initial_temp - 32 ) / 1.8;
+            converted_temp = (initial_temp - 32 ) / 1.8; // f to c
             printf("%.2fF = %.2fC", initial_temp, converted_temp);
             break;
         default:
