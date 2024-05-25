@@ -14,7 +14,6 @@ int main() {
     if(ch=13) // 13H = Enter -> fim do código
     {   
 
-        break;
     } 
     return 0;
 }
