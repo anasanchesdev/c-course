@@ -1,20 +1,15 @@
 #include <stdio.h>
 
-
 int main(){
-
+    // odd -> impar , even -> par
     int num;
-    char odd[3] = "Odd";
-    char even[4] = "Even";
-
     
-    printf("Enter a integer number: \n > ");
+    printf("Enter an integer number: \n > ");
     scanf("%d", &num);
 
-    char result[4] = (num % 2 == 0) ? "Odd" : "Even";
+    int sei = (num % 2 == 0) ? "Even" : "Odd";
 
-    printf("%s", result);
-
+    printf("%d is %s", num, sei);
 
     return 0;
 }
