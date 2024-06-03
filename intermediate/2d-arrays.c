@@ -22,10 +22,22 @@ int main()
 
     // criação dinamica de matriz 3x3
     int A[3][3];
+
+    // int = 4 Bytes -> 12 Bytes por array -> 36 Bytes no total
+
+    // calculo do numero de linhas:
+    // tamanho total da matriz / tamanho de uma linha (array) (Bytes)
+    // neste caso: 36 / 12 = 3 linhas
+    int rows = sizeof(A) / sizeof(A[0]);
+
+    // calculo do numero de colunas:
+    // tamanho de uma linha (array) / tamanho de um elemento (Bytes)
+    // neste caso: 12 / 4 = 3 colunas
+    int columns = sizeof(A[0]) / sizeof(A[0][0]);
     int element = 1;  // aij
-    for (int i = 0; i <= 2; i++) // i = linhas
+    for (int i = 0; i < rows; i++) // i = linhas
     {
-        for (int j = 0; j <= 2; j++)  // j = colunas
+        for (int j = 0; j < columns; j++)  // j = colunas
         {
             A[i][j] = element;
             element += 1;
@@ -33,7 +45,6 @@ int main()
         }
         printf("\n");
     }
-
 
     return 0;
 }
