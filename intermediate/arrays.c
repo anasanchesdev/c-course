@@ -3,7 +3,7 @@
 /*
 = ARRAYS =
 - Lista contendo vários elementos >do mesmo tipo<.
-Sintaxe: tipo var[número de elementos*] = {x, y, z, w}
+Sintaxe: tipo var[Bytes*] = {x, y, z, w}
 *opcional
 [!] Uma string é um conjunto de caractéres em uma array
 [!] Para acessar cada elemento de uma array, é preciso referir-se ao índice de cada um. Índices começam no 0.
