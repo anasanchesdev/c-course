@@ -10,7 +10,7 @@ int main()
 {
     /*
     - adicionar [] para cada nível
-    - primeiro [] -> matriz mãe; segundo, terceiro, ... [] -> matrizes subsequentes
+    - SINTAXE: numbers[acessa array dentro da array][acessa elemento especifico desta array]
     - é preciso especificar o tamanho máximo de cada array
     - neste caso: [nº linhas (uma array inteira)][nº colunas (elementos de cada array)]
     */
