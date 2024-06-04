@@ -17,7 +17,7 @@ int main()
     char name[] = {'j', 'o', 'h', 'n'};
 
     printf("%d\n", nums[0]);
-    nums[0] = nums[4];
+    nums[0] = nums[4]; // alterando valor do índice 0 para o valor do índice 4
     printf("%d", nums[0]);
 
     return 0;
