@@ -7,11 +7,11 @@ TYPE DEF
 - Dinamismo, código mais compreensível
 
 Sintaxe:
-[!] Fora de main()
+[!] Definir fora de main()
 
 typedef tipo key;
 
-- "typedef" pode ser usado juntamente com structs de maneira que, ao declará-los, possa-se omitir "struct".
+- "typedef" pode ser usado juntamente com structs de maneira que, ao declará-los, possa-se omitir a palavra "struct".
 
 
 */
