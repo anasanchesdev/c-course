@@ -5,10 +5,18 @@
 
 int main()
 {
+    // usa o tempo atual como seed 
     srand(time(0));
-    int random = (rand() % 100) + 1; // 1-100
+
+    // numero aleatório entre 1 e 100
+    int random = (rand() % 100) + 1;
+
+    // número adivinhado
     int input;
+
+    // número de tentativas
     int guesses = 0;
+    
     printf("===NUMBER GUESSING GAME===\n");
     printf("Welcome to the Number Guessing Game!\nYour goal is to guess a number between 1 and 100.\nThroughout your guesses, you'll receive hints such as \"Too low!\" or \"Too high!\" ... Good luck :)\n");
 
@@ -19,20 +27,17 @@ int main()
 
         if (input == random)
         {
-            guesses += 1;
-            printf("Nice, you got it right after %d guesses!", guesses);
+            printf("Nice, you got it right after %d guesses!", guesses + 1);
             break;
         }
 
         else if (0 < input && input < random)
         {   
-            guesses += 1;
             printf("Too low!");
         }
 
         else if (input > random)
         {
-            guesses += 1;
             printf("Too high!");
         }
 
@@ -40,6 +45,8 @@ int main()
         {
             break;
         }
+
+        guesses += 1;
     }
     
 
