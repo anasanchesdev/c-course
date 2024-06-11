@@ -24,9 +24,9 @@ int main()
 
     int num_of_questions = sizeof(questions)/sizeof(questions[0]);
     
-    for (int i; i < num_of_questions; i++)
+    for (int i; i <= num_of_questions; i++)
     {
-        printf("%s\n%s", questions[0], options[0]);
+        printf("%s\n%s", questions[i], options[i]);
         printf("\n > ");
         scanf("%c", &guess);
     }
