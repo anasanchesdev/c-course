@@ -4,8 +4,7 @@
 int main()
 {
     char guess;
-    int right_guesses;
-    int i = 0;
+    int right_guesses = 0;
 
     char questions[][100] = 
     {
@@ -20,16 +19,29 @@ int main()
         "A. printf()\nB. scanf()",
         "A. switch()\nB. for()"
     };
-    char answers[][6] = {"a", "a", "b"};
+    char answers[100] = {'A', 'A', 'B'};
 
     int num_of_questions = sizeof(questions)/sizeof(questions[0]);
     
-    for (int i; i <= num_of_questions; i++)
+    for (int i = 0; i < num_of_questions; i++)
     {
-        printf("%s\n%s", questions[i], options[i]);
+        printf("\n\n%s\n%s", questions[i], options[i]);
         printf("\n > ");
-        scanf("%c", &guess);
+        scanf(" %c", &guess);
+        guess = toupper(guess);
+        if (guess == answers[i])
+        {
+            printf("\nYou got it right!");
+            right_guesses += 1;
+        }
+        else
+        {
+            printf("\nThat's wrong.");
+        }
     }
+
+    printf("\n\nCongratulations! You finished the Quiz Game!");
+    printf("\nYour score is %d/%d", right_guesses, num_of_questions);
 
     return 0;
 }
