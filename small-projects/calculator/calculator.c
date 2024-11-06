@@ -4,9 +4,7 @@
 int main(){
 
     char operator;
-    double a;
-    double b;
-    double result; 
+    double a, b, result; 
     printf("Instructions:\n| + to sum\n| - to subtract\n| * to multiply\n| / to divide\n");
     printf("Number 1:\n > ");
     scanf("%lf", &a);
